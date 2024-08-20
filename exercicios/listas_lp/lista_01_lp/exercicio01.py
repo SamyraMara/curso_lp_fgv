@@ -23,8 +23,6 @@ def perimetro_melhor(n):
             melhor_p = p
             
         p += 1
-        
-    print(melhor_p," ",total_triangulos)  
     return melhor_p
 
 n = input()
