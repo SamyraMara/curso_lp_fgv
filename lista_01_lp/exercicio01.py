@@ -1,27 +1,30 @@
           
 def perimetro_melhor(n):
     
-    if n != type(int):
+    if not n.isdigit():
+        print("Entrada precisa ser um número inteiro")
         return None
+    n = int(n)
     
     total_triangulos = 0
     melhor_p = 0
-    
     p = 1
+    
     while p <= n:
-        count = 0
+        temp = 0
         
         for a in range(1, p):
             for b in range(a, p - a):
                 c = p - a - b
                 if a**2 + b**2 == c**2:
-                    count += 1
-        if count > total_triangulos:
-            total_triangulos = count
+                    temp += 1
+        if temp >= total_triangulos:
+            total_triangulos = temp
             melhor_p = p
-
+            
         p += 1
-             
+        
+    print(melhor_p," ",total_triangulos)  
     return melhor_p
 
 n = input()
