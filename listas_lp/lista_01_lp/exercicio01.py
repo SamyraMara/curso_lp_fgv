@@ -18,7 +18,7 @@ def perimetro_melhor(n):
                 c = p - a - b
                 if a**2 + b**2 == c**2:
                     temp += 1
-        if temp >= total_triangulos:
+        if temp > total_triangulos:
             total_triangulos = temp
             melhor_p = p
             
