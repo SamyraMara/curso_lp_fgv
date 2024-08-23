@@ -1,0 +1,6 @@
+with open('dados.txt', 'r', encoding='utf-8') as arquivo:
+    arquivo.seek(5)  # Mover para a posição 5
+    print(arquivo.read(10))  # Ler 10 caracteres a partir da posição 5
+    posicao = arquivo.tell()  # Obter a posição atual
+    print(f'Posição atual: {posicao}')
+    

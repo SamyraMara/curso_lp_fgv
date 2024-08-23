@@ -9,6 +9,7 @@ def scope_test():
         
     do_local()
     print("After local assignment:", spam)
+    
     do_global()
     print("After global assignment:", spam)
 
