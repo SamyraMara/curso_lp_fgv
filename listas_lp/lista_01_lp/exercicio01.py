@@ -1,5 +1,5 @@
           
-def perimetro_melhor(n):
+def exercicio01(n):
     
     if not n.isdigit():
         print("Entrada precisa ser um número inteiro")
@@ -24,6 +24,3 @@ def perimetro_melhor(n):
             
         p += 1
     return melhor_p
-
-n = input()
-perimetro_melhor(n)
